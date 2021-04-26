@@ -1,0 +1,570 @@
+:root {
+    --intro-bg: hsl(356, 100%, 66%);
+    --about-bg: hsl(355, 100%, 74%);
+    --headings-color: hsl(208, 49%, 24%);
+    --white-color: hsl(0, 0%, 100%);
+    --footer-text: hsl(240, 2%, 79%);
+    --body-copy: hsl(207, 13%, 34%);
+    --footer-bg: hsl(240, 10%, 16%);
+}
+
+body {
+    margin: 0;
+}
+
+/********** SECTION-1-INTRO **********/
+/* SECTION-1-DIV */
+#intro {
+    /* background: linear-gradient(90deg, #ff8f70 0%,#ff3d54 100%); */
+    /* background-color: var(--about-bg); */
+    background-image: url(../images/bg-pattern-intro.svg), linear-gradient(90deg, hsl(13, 100%, 72%) 10%,hsl(353, 100%, 62%) 80%);
+    background-position: -65vh -88.5vw, center;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 0 0 0 80px;
+    padding: 3% 5%;
+}
+
+/* NAVBAR */
+li {
+    list-style: none;
+}
+nav {
+    color: var(--white-color);
+    display: flex;
+    font-family: "Overpass";
+    font-size: 1rem;
+    font-weight: 600;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+}
+span{
+    padding-left: 15px;
+}
+span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ARROW-ICON */
+.arrow {
+    transition: all 0.25s ease-in-out;
+}
+.down {
+    transform: rotate(180deg);
+}
+
+/* MAIN-MENU */
+#menu {
+    display: flex;
+    margin: 0;
+    padding: 0 2%;
+    width: min-content;
+}
+.dropdown-item a {
+    height: 50px;
+}
+.menu-item {
+    /* height: 30px; */
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+/* SUB-MENU-ITEMS */
+.sub-item {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0;
+    width: 140px;
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
+    z-index: 5;
+}
+.sub-item li {
+    align-items: center;
+    background-color: var(--white-color);
+    color: #000000;
+    display: flex;
+    font-weight: 300;
+    height: 40px;
+    padding: 5px 20px;
+    position: relative;
+    /* visibility: hidden; */
+    z-index: 5;
+}
+.sub-item li:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* DROP-DOWN-BUTTON */
+.drop-down-button {
+    visibility: hidden;
+}
+
+/* HEADLINE */
+#headline {
+    /* display: block; */
+    color: var(--white-color);
+    font-family: "Ubuntu";
+    font-size: 4rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* LOGO-IMAGE */
+#logo {
+    height: min-content;
+}
+
+/* LOGIN */
+#login-button {
+    color: var(--white-color);
+    margin: 12px;
+    position: absolute;
+    right: 140px;
+    text-decoration: none;
+}
+/* SIGN-UP */
+#sign-up, #start-for-free, #learn-more {
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 50px;
+    color: var(--intro-bg);
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 700;
+    height: 40px;
+    margin-left: 5px;
+    position: absolute;
+    right: 0;
+    transition: all 0.25s ease-in-out;
+    width: 130px;
+}
+#sign-up:hover, #start-for-free:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* START-FOR-FREE */
+#start-for-free {
+    margin: 30px 10px 75px;
+    position: relative;
+}
+#learn-more {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+#learn-more:hover {
+    background-color: var(--white-color);
+    color: var(--intro-bg);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* ********************SECTION-2-ABOUT******************** */
+#about {
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 116vh 4vw;
+    font-family: "Overpass";
+    padding: 8% 7% 10%;
+    position: relative;
+}
+#about-div {
+    line-height: 1.75;
+    margin: 120px 0;
+    width: 39%;
+}
+
+/* DESIGNED-FOR-FUTURE */
+#designed-for-future {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* ILLUSTRATOR-MOBILE-IMAGE */
+.illustrator-mobile {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/* ********************SECTION-3-INFRASTRUCTURE******************** */
+#infra {
+    border-radius: 0 80px;
+    background-image: url(../images/bg-pattern-circles.svg), linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 100%);
+    background-position: -32vh -33vw, center;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    font-family: "Overpass";
+    height: 475px;
+    justify-content: space-between;
+    padding: 0 7%;
+    position: relative;
+    z-index: 1;
+}
+
+/* INFRA-DIV */
+.infra-div {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.75;
+    width: 41.5%;
+    z-index: 1;
+}
+
+/* INFRA-IMAGE */
+#infra-img {
+    float: left;
+    height: max-content;
+    margin: 0;
+    position: relative;
+    top: -80px;
+    width: 50%;
+    z-index: 5;
+}
+
+/* INFRA-HEADING */
+#infra-heading {
+    display: inline;
+    font-size: 2.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+.infra-detail {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* ********************SECTION-4-DESKTOP******************** */
+#desktop {
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -38vh 6.75vw;
+    display: flex;
+    font-family: "Overpass";
+    line-height: 1.75;
+    padding: 7%;
+    height: 750px;
+    z-index: 1;
+}
+
+/* ILLUSTRATOR-LAPTOP-IMAGE */
+.illustrator-laptop {
+    visibility: hidden;
+}
+
+/* DESKTOP-DIV */
+.desktop-div {
+    display: inline-block;
+    width: 40%;
+    margin: 190px 100px;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+/* ********************SECTION-5-FOOTER******************** */
+li a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+#footer {
+    background-color: var(--footer-bg);
+    border-radius: 0 80px 0 0;
+    color: var(--footer-text);
+    display: flex;
+    flex-direction: row;
+    font-family: "Ubuntu";
+    justify-content: space-evenly;
+    line-height: 2.5;
+    padding: 3% 7% 5% 0;
+}
+
+/* FOOTER-IMAGE */
+#footer-img {
+    height: min-content;
+    margin: 30px 0;
+    width: auto;
+}
+
+/* FOOTER-LIST */
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+
+
+
+
+
+
+
+/* ********************RESPONSIVE-DESIGN******************** */
+@media screen and (min-width: 374px) and (max-width: 1025px) {
+    /* **********SECTION-1-INTRO********** */
+    @keyframes animate {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0.25;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #intro {
+        background-position: center, 0vh 0vw;
+        background-repeat: no-repeat, no-repeat;
+        padding: 15% 5%;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 5%;
+    }
+    hr {
+        background-color: var(--white-color);
+        border: none;
+        height: 2.5px;
+        transition: all 0.2s ease-in-out;
+    }
+    #logo {
+        width: min-content;
+    }
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 25px;
+        visibility: hidden;
+    }
+    .menu-item {
+        background-color: var(--white-color);
+        color: var(--footer-bg);
+        font-weight: 700;
+        height: 40px;
+        margin: 0;
+        padding: 10% 0 3% 0;
+    }
+    .sub-item {
+        padding: 0 5%;
+        visibility: hidden;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    .sub-item li {
+        background-color: var(--footer-text);
+        justify-content: center;
+    }
+    #login-button {
+        background-color: var(--white-color);
+        border-top: 1px solid var(--footer-text);
+        color: var(--footer-bg);
+        position: relative;
+        right: 0;
+        margin: 0 auto;
+        padding: 10% 0;
+        width: 100%;
+    }
+    .login-sign-up {
+        background-color: var(--white-color);
+        border-radius: 0 0 5px 5px;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        /* animation: animate 0.25s ease-in-out; */
+    }
+    #sign-up {
+        background: linear-gradient(90deg, hsl(13, 100%, 72%) 10%,hsl(353, 100%, 62%) 80%);
+        color: var(--white-color);
+        margin: 0 auto 40px;
+        position: relative;
+        transition: all 0.01s ease-in-out;
+    }
+    .drop-down-button {
+        background: none;
+        border: none;
+        /* border: 1px solid var(--white-color); */
+        position: absolute;
+        right: 0;
+        height: 100%;
+        visibility: visible;
+        width: 40px;
+    }
+    .drop-down-button img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 7px;
+        visibility: hidden;
+    }
+    #headline {
+        font-size: 2.25rem;
+        margin: 100px 0 20px;
+    }
+
+
+
+
+
+
+
+
+
+    /* **********SECTION-2-ABOUT********** */
+    #about {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        padding: 20% 3% 0;
+    }
+    #about-div {
+        line-height: 1.5;
+        margin: 0 0 300px;
+        padding: 0 12%;
+        text-align: center;
+        width: fit-content;
+    }
+    .illustrator-mobile {
+        margin: 25px 0;
+        position: relative;
+        visibility: visible;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+    /* **********SECTION-3-INFRA********** */
+    #infra {
+        background-position: -12.5vh -50vw, center;
+        background-size: 150%, auto;
+        height: 650px;
+        flex-direction: column;
+        height: fit-content;
+        padding: 0;
+        margin: auto;
+        position: relative;
+    }
+    #infra-img {
+        height: auto;
+        position: relative;
+        top: -180px;
+        margin: 0;
+        width: 100%;
+    }
+    .infra-div {
+        margin: 0 auto;
+        width: fit-content;
+        position: relative;
+        text-align: center;
+        top: -150px;
+    }
+    .infra-detail {
+        text-align: center;
+        padding: 0 25px;
+    }
+
+
+
+
+
+
+
+
+    /* ********************SECTION-4-DESKTOP******************** */
+    #desktop {
+        background: none;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .illustrator-laptop {
+        margin: 20px 0;
+        visibility: visible;
+    }
+    .desktop-div {
+        margin: 0 0 30px 0;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+    }
+
+
+
+
+
+
+
+    
+    /* ********************SECTION-5-FOOTER******************** */
+    #footer {
+        align-items: center;
+        flex-direction: column;
+        padding: 10% 0 0;
+    }
+    #footer-img {
+        width: fit-content;
+    }
+    .footer-list {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        width: max-content;
+    }
+    ul {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
