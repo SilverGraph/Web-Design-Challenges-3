@@ -45,7 +45,9 @@ function toggleItem() {
 dropDownButton.addEventListener("click", function(){
     for(var i=0; i<3; ++i) {    
         downArrow[i].setAttribute("src", "images/icon-arrow-dark.svg");
-        // downArrow[i].style.transition = 'transform 0.01s ease-in-out';
+        subItem[i].style.visibility = 'hidden';
+        menu[i].style.height = '40px';
+        downArrow[i].className = 'arrow';
     }
 
     var dropDownToggle = document.getElementById("menu").toggleAttribute("visibility");
