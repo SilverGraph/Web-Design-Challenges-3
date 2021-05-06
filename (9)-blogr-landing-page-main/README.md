@@ -1,5 +1,7 @@
 # Frontend Mentor - Blogr landing page
 
+## Live site url: https://blogr-landing-page-eta.vercel.app/
+
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
